@@ -1,0 +1,334 @@
+html{
+    font-family: "Manrope", serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body{
+    margin: 0;
+}
+button{
+    background-color: #F84646;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+}
+#presentation-container{
+    padding: 2.5rem 7.5rem;
+    height: 50vh;
+    background-image: url(./assets/Rectangle\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#presentacao{
+    width: 45vw;
+}
+#qualities{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+#qualities > img{
+    margin: 0 2.5rem;
+}
+.container{
+    padding: 5rem 7.5rem;
+    text-align: center;
+}
+.contact-title{
+    margin-top: .5rem;
+}
+.container > p{
+    margin-top: 1.5rem;
+}
+.container > button{
+    margin-top: 2rem;
+    transition: opacity 0.5s ease-in, transform 0.5s 0.2s;
+}
+.container > button:hover{
+    opacity: 0.8s;
+    transform: scale(1.5);
+}
+.background-mudado{
+    background: linear-gradient(190deg, #FFF, black);
+}
+.background-red{
+    background-color: #F84646;
+    color: #FFF;
+}
+.background-gray{
+    background-color: #F4F5F7;
+}
+.article-details{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 0 2.5rem 0 0;
+    justify-content: space-between;
+}
+.article-details>button{
+    font-size: 1rem;
+}
+.article-container:nth-child(even)>.article-details{
+    margin: 0 0 0 2.5rem;
+}
+.article-container{
+    display: flex;
+    flex-direction: row;
+}
+.article-container > img{
+    width: 50%;
+    object-fit: cover;
+}
+.article-container:nth-child(even){
+    margin-top: 5rem;
+    flex-direction: row-reverse;
+}
+.footer-list{
+    display: flex;
+    text-align: left;
+}
+.footer-list>ul>li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.footer-list>ul>li:last-child{
+    margin-bottom: 0;
+}
+.footer-list>ul>li:first-child{
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+.footer-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8.5rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+}
+.grid-item>h3{
+    margin-top: .5rem;
+}
+.grid-item>p{
+    margin-top: .5rem 0 0;
+}
+.grid-container-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.grid-item-companies{
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+.company1{
+    grid-area: 3/ 1;
+}   
+.company2{
+    grid-area: 2 / 2;
+}   
+.company3{
+    grid-area: 3 / 2;
+}
+.company4{
+    grid-area: 1 / 3;
+}
+.company5{
+    grid-area: 2 / 3;
+}
+.company6{
+    grid-area: 3 / 3;
+}
+.company7{
+    grid-area: 2 / 4;
+}
+.company8{
+    grid-area: 3 / 4;
+}
+.company9{
+    grid-area: 3 / 5;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    #presentation-container{
+        padding: 5rem 4rem;
+    }
+    .container{
+        padding: 5rem 4rem;
+    }
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-container-companies{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .company1{
+        grid-area: auto
+    }   
+    .company2{
+        grid-area: auto;
+    }   
+    .company3{
+        grid-area: auto;
+    }
+    .company4{
+        grid-area: auto;
+    }
+    .company5{
+        grid-area: auto;
+    }
+    .company6{
+        grid-area: auto;
+    }
+    .company7{
+        grid-area: auto;
+    }
+    .company8{
+        grid-area: auto;
+    }
+    .company9{
+        grid-area: auto;
+    }
+}
+@media only screen and (max-width: 767px){
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    #presentation-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    #qualities{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    #qualities > img{
+        transform: rotate(90deg);
+        margin: 2.5rem 0;
+    }
+    .article-container{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .article-container:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .article-details{
+        text-align: center;
+        align-items: normal;
+        margin: 2rem 0 0 0;
+    }
+    .article-container:nth-child(even) > .article-details{
+        flex-direction: column-reverse;
+    }
+    .article-container>img{
+        width: 100%;
+    }
+    .grid-container-companies{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    .grid-item-companies{
+        height: 6rem;
+    }
+    .company1{
+        grid-area: auto
+    }   
+    .company2{
+        grid-area: auto;
+    }   
+    .company3{
+        grid-area: auto;
+    }
+    .company4{
+        grid-area: auto;
+    }
+    .company5{
+        grid-area: auto;
+    }
+    .company6{
+        grid-area: auto;
+    }
+    .company7{
+        grid-area: auto;
+    }
+    .company8{
+        grid-area: auto;
+    }
+    .company9{
+        grid-area: auto;
+    }
+    .footer-list{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .footer-list>ul{
+        margin-top: 3rem;
+    }
+    .footer-list>ul:first-child{
+        margin-top: 0;
+    }
+    .footer-right{
+        flex-direction: column-reverse;
+    }
+    .footer-right>div:first-child{
+        margin-top: 4rem;
+    }
+}
